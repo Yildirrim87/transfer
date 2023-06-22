@@ -1,0 +1,9 @@
+docker build -t counter-backend:v1 .
+
+docker tag counter-backend:v1 ghcr.io/yildirrim87/pp/counter-backend:v1
+
+docker login ghcr.io
+
+docker push ghcr.io/yildirrim87/pp/counter-backend:v1
+
+

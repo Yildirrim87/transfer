@@ -1,0 +1,14 @@
+kubectl expose service counter-backend --name=counter-backend --type=LoadBalancer
+
+
+
+oc get services
+
+
+
+kubectl expose service counter-backend --name=counter-backend-route --port=80 --target-port=80 --type=LoadBalancer
+
+
+
+oc expose service counter-backend --name=counter-backend-route --port=80
+
